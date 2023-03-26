@@ -1,30 +1,35 @@
-Project Name
 
-Tulis nama proyek di sini.
-Description
+# Starter template node js
 
-Tulis deskripsi singkat tentang proyek di sini.
-Installation
+Ini adalah starter template node js dengan express, ejs, dan bootstrap.
 
-Untuk menjalankan proyek, Anda harus menginstal Node.js dan NPM terlebih dahulu. Kemudian, gunakan perintah di bawah ini untuk menginstal dependensi proyek:
 
-npm install
+## Installation
 
-Usage
+Install starter template with npm
 
-Gunakan perintah di bawah ini untuk menjalankan proyek:
+```bash
+  git clone https://github.com/daniBagaskara/template_npm.git
 
-sql
+  cd template_npm
+  
+  npm install
+```
+    
+## Usage/Examples
 
-npm start
+```
+npm run start
+```
+proyek akan berjalan di http://localhost:3000
 
-Proyek akan berjalan pada http://localhost:3000/. Anda dapat membuka browser dan mengetikkan URL tersebut untuk melihat proyek yang berjalan.
-Credits
 
-Jika ada bagian dari kode yang diambil dari sumber lain, Anda harus menyebutkan sumber tersebut di sini.
-License
+## License
 
-Tentukan lisensi proyek di sini.
-Contact
+[MIT](https://choosealicense.com/licenses/mit/)
 
-Jika Anda memiliki pertanyaan atau saran untuk proyek ini, silakan hubungi saya di alamat email yang tertera di profil saya.
+
+## Support
+
+For support, email bagaskaradani724@gmail.com or visit my special repository
+
