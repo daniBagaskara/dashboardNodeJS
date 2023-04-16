@@ -7,6 +7,7 @@ class Auth {
             message: 'Welcome to our website!',
             baseUrl: baseUrl,
             error: null,
+            layout: '../views/auth-layout.ejs'
         };
         res.render('register', data);
     }
