@@ -1,4 +1,5 @@
 const express = require('express');
+const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require('body-parser');
 const routes = require('./routes/routes.js');
 const path = require("path");
@@ -12,8 +13,8 @@ app.set('view engine', 'ejs')
 app.set('baseUrl', 'http://localhost:3000');
 
 // Parse form data
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use("/", express.static("./node_modules/bootstrap/dist/"));
+app.use(expressLayouts);
+app.use(express.static('public'));
 
 app.use('/', routes);
 

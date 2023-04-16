@@ -1,6 +1,6 @@
 const path = require('path');
 class Auth {
-    async register(req, res) {
+ register(req, res) {
         const baseUrl = req.app.get('baseUrl');
         const data = {
             title: 'Login Page',
@@ -8,7 +8,7 @@ class Auth {
             baseUrl: baseUrl,
             error: null,
         };
-        res.render(path.join(__dirname, '../views/register.ejs'), data);
+        res.render('register', data);
     }
 }
 

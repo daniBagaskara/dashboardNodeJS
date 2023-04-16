@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const Auth = require("../controller/Auth.js");
+const Dashboard = require("../controller/Dashboard.js");
 
-router.get('/', (req, res) => {
-    res.send('Hello, World!');
-});
+router.get('/', Dashboard.index);
 
 router.get('/register', Auth.register);
 
