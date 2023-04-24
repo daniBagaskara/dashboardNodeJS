@@ -4,7 +4,7 @@ class Dashboard {
            const data = {
                title: 'Dashboard - eSPP',
                baseUrl: baseUrl,
-               layout: '../views/main-layout',
+               layout: '../views/layout/main-layout',
                error: null,
            };
            res.render('Dashboard', data);
