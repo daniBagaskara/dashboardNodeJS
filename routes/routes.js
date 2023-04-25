@@ -1,12 +1,18 @@
 const express = require('express');
 const router = express.Router();
-const Auth = require("../controller/Auth.js");
+
+const authMiddleware = require('../middleware/authMiddleware.js');
+const sessionMiddleware = require('../middleware/sessionMiddleware.js');
+const Auth = require("../controller/C_Auth.js");
 const Dashboard = require("../controller/Dashboard.js");
 
-router.get('/', Dashboard.index);
+router.get('/', authMiddleware,Dashboard.index);
 
-router.get('/register', Auth.register);
-router.get('/login', Auth.login);
+router.get('/register', sessionMiddleware,Auth.register);
+router.post('/register', Auth.processRegister);
+router.get('/login', sessionMiddleware,Auth.login);
+router.post('/login',Auth.processLogin);
+
 router.all('*', (req, res) => {
     res.status(404).send('404: Page not found');
 });
